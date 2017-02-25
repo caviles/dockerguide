@@ -42,6 +42,17 @@ A few common commands
      # Docker pull command - grab an image from docker hub
      
      $ docker pull hello-world
+     
+     # show all installed images
+     
+     $ docker images
+     
+     # create a container
+     $ docker run <image name> 
+     example: $ docker run hello-world
+     
+     # show all containers
+     $ docker ps -a
     
      
     
