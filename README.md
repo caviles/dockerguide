@@ -8,6 +8,7 @@ A few common commands
      docker-machine ls 
      
      # show running docker VM IPs
+     
      docker-machine ip 
      
      # show running docker IP for default docker VM
