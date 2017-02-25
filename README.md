@@ -36,6 +36,6 @@ A few common commands
      
      $ docker-machine stop
   
-     * Find Docker images *
+    
      
     
