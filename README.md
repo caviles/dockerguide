@@ -4,7 +4,7 @@ Things you need to know to get started with docker:
 There are many open source community shared images online:
 [Docker Images] (https://hub.docker.com/)
 
-Use the search control on docker hub to find an image. For example if you search Hello World. YOu will find a results page which contains hello world hits. [Docker Images] https://hub.docker.com/_/hello-world/
+Use the search control on docker hub to find an image. For example if you search Hello World. YOu will find a results page which contains hello world hits. [Docker Images] (https://hub.docker.com/_/hello-world/)
 
 On left hand side you'll notice a div titled Docker Pull Command. You can use that command to pull down the hello world image.
 
