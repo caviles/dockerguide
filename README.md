@@ -2,6 +2,7 @@
 Things you need to know to get started with docker
 
 A few common commands
+     
      # show running docker VMs
      
      docker-machine ls 
