@@ -35,3 +35,4 @@ A few common commands
      * Find Docker images *
      
      [Docker Images] (https://hub.docker.com/)
+     [I'm an inline-style link](https://www.google.com)
