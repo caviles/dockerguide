@@ -1,6 +1,7 @@
 # dockerguide
-Things you need to know to get started with docker
- 
+Things you need to know to get started with docker:
+
+There are many open source community shared images online:
 [Docker Images] (https://hub.docker.com/)
      
 
