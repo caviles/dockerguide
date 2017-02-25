@@ -51,8 +51,13 @@ A few common commands
      $ docker run <image name> 
      example: $ docker run hello-world
      
-     # show all containers
+     # show all containers - this will also give you the container IDs needed to remove the container
      $ docker ps -a
+     
+     #delete container
+     docker rm <container id from command above>
     
+     #delete container
+     $ docker rmi hello-world
      
     
