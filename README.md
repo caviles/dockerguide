@@ -1,4 +1,4 @@
-# dockerguide
+# Docker Guide
 Things you need to know to get started with docker:
 
 There are many open source community shared images online:
