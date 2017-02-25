@@ -50,6 +50,7 @@ A few common commands
      # create a container
      $ docker run <image name> 
      example: $ docker run hello-world
+     example run on specific port docker run -p 80 kitematic/hello-world-nginx:latest
      
      # show all containers - this will also give you the container IDs needed to remove the container
      $ docker ps -a
