@@ -81,6 +81,7 @@ A few common commands
      docker run node -p 80:3000 -v /var/www
      # docker inspect will tell you where the file was created
      $docker inspect <containername>
-     
+     # if you don't like magic you can tell docker where to mount the folder. The example below mounts it to the current working directory
+      docker run node -p 80:3000 -v $(pwd):/var/www
      
     
