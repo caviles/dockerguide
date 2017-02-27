@@ -1,6 +1,6 @@
 # Docker Guide
 
-# File Layers
+
 
 
 Things you need to know to get started with docker:
@@ -68,8 +68,9 @@ A few common commands
     
      #delete container
      $ docker rmi hello-world
-     #
      
+     
+# File Layers
     
      
      
