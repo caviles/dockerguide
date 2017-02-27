@@ -72,9 +72,9 @@ A few common commands
      
 # File Layers
     
-  Images are read only when you want to write to a system you either bake the source code into an image or you put the source code into a container layer.  
+  Images are read only when you want to write to a system you either bake the source code into an image or you put the source code into a container layer.  The container layer is blown away when you delete the container if you want the data/source you've created to stick around after you delete the container you will have to create a volume.
      
      #Data Volume
-     
+     They stick around when a container is deleted. When you write to a volume it writes to an alias that is mount to a mounted folder the volume. 
      
     
