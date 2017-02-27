@@ -1,4 +1,8 @@
 # Docker Guide
+
+# File Layers
+
+
 Things you need to know to get started with docker:
 
 There are many open source community shared images online:
@@ -9,7 +13,7 @@ Use the search control on docker hub to find an image. For example if you search
 On left hand side you'll notice a div titled Docker Pull Command. You can use that command to pull down the hello world image.
 
 
-*Images*
+
 
 A few common commands
 
