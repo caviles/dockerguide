@@ -8,6 +8,9 @@ Use the search control on docker hub to find an image. For example if you search
 
 On left hand side you'll notice a div titled Docker Pull Command. You can use that command to pull down the hello world image.
 
+
+*Images*
+
 A few common commands
 
      # to use terminal window other than quick start terminal use
@@ -61,5 +64,10 @@ A few common commands
     
      #delete container
      $ docker rmi hello-world
+     #
+     
+    
+     
+     
      
     
