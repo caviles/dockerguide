@@ -77,4 +77,10 @@ A few common commands
      #Data Volume
      They stick around when a container is deleted. When you write to a volume it writes to an alias that is mount to a mounted folder the volume. 
      
+     # docker will magically make the mounted folder using the command below
+     docker run node -p 80:3000 -v /var/www
+     # docker inspect will tell you where the file was created
+     $docker inspect <containername>
+     
+     
     
