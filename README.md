@@ -78,11 +78,21 @@ A few common commands
      They stick around when a container is deleted. When you write to a volume it writes to an alias that is mount to a mounted folder the volume. 
      
      # docker will magically make the mounted folder using the command below
-     docker run node -p 80:3000 -v /var/www
+     docker run  -p 80:3000 -v /var/www node
      # docker inspect will tell you where the file was created
      $docker inspect <containername>
+     # The inspect command will return where the drive was mounted
+     # "Type": "volume",
+     #           "Name": "091b298f1c04405bfb8e622ad507b20b1b82aefd76bbbf72fa7531533e4bb331",
+     #           "Source": #"/mnt/sda1/var/lib/docker/volumes/091b298f1c04405bfb8e622ad507b20b1b82aefd76bbbf72fa7531533e4bb331/_data",
+                
      # if you don't like magic you can tell docker where to mount the folder. The example below mounts it to the current working directory
-      docker run node -p 80:3000 -v $(pwd):/var/www
+      docker run  -p 80:3000 -v $(pwd):/var/www node
+      # now volume will use your current working directroy
+      # "-v",
+      #      "/Users/cesaraviles/Projects:/var/www"
+      #To remove the volume
+      docker rm <container> -v
       
       
      
