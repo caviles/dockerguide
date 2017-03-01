@@ -134,3 +134,9 @@ docker push <dockerusername>/nodesample
 
 #Networking in Docker
     
+  #docker link container - this will build a network between two containers  
+  $ docker run -d -p 3000:3000 --link my-mongodb:mongodb --name nodeapp caviles2/node
+  
+  # run a node command from docker
+  $  docker exec da node dbSeeder.js 
+  
