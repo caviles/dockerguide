@@ -125,12 +125,13 @@ To build the docker image create an account on docker hub https://hub.docker.com
 
 docker build -f dockerfile -t <dockerusername>/nodesample .
 
-#install
+-install
 docker run -d -p 8080:3000 <dockerusername>/nodesample
 #this will now be running on
 http://192.168.99.100:8080/
 
-#now create an account on docker hub and push to docker hub
+-now create an account on docker hub and push to docker hub
 docker push <dockerusername>/nodesample
 
+#Networking in Docker
     
