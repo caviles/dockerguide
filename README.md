@@ -140,3 +140,11 @@ docker push <dockerusername>/nodesample
   # run a node command from docker
   $  docker exec da node dbSeeder.js 
   
+  #create a bridge network
+  docker network create --driver bridge isisolated_network
+    
+  #now bring a container into the isolated network
+  docker run -d --net=isolated_network --name mongodb mongo
+
+#Docker Compose
+  
