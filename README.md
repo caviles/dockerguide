@@ -106,7 +106,7 @@ COPY . /var/www
 
 WORKDIR /var/www
 
-ENV PORT=3000
+ENV PORT=$PORT
 
 ENV NODE_ENV=production
 
@@ -119,5 +119,18 @@ MAINTAINER Cesar Aviles
 EXPOSE 3000
 
 ENTRYPOINT ["npm","start"]
+
+
+To build the docker image create an account on docker hub https://hub.docker.com/
+
+docker build -f dockerfile -t <dockerusername>/nodesample .
+
+#install
+docker run -d -p 8080:3000 <dockerusername>/nodesample
+#this will now be running on
+http://192.168.99.100:8080/
+
+#now create an account on docker hub and push to docker hub
+docker push <dockerusername>/nodesample
 
     
