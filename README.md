@@ -93,9 +93,31 @@ A few common commands
       #      "/Users/cesaraviles/Projects:/var/www"
       #To remove the volume
       docker rm <container> -v
+      #run npm on docker image
+      docker run -p 80:3000 -v $(pwd):/var/www -w "/var/www" node npm start
       
       
      
-#Source Code Management
+#Docker File - Sample YAML
+
+FROM node:latest
+
+COPY . /var/www
+
+WORKDIR /var/www
+
+ENV PORT=3000
+
+ENV NODE_ENV=production
+
+RUN npm install
+
+VOLUME ["/var/www"]
+
+MAINTAINER Cesar Aviles
+
+EXPOSE 3000
+
+ENTRYPOINT ["npm","start"]
 
     
