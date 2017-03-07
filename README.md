@@ -147,4 +147,22 @@ docker push <dockerusername>/nodesample
   docker run -d --net=isolated_network --name mongodb mongo
 
 #Docker Compose
+
+
+#Docker Swarm
+
+A swarm is a cluster of nodes. To initailize a swarm on your server run:
+     $docker swarm init
+
+Follow the response from the command to add managers and workers. Managers make decisions for the cluster and workers do not. 
+
+Swarm initialized: current node (z3e62f2l44b2inbkfiq43wd5s) is now a manager.
+
+To add a worker to this swarm, run the following command:
+
+    docker swarm join \
+    --token SWMTKN-1-2pdojkxxo6c7lh7o409ai5z8v68w1m0n1lmr6jk77krx5edjb8-e0kuxxega5c3uhxk42kx6ypna \
+    10.0.0.4:2377
+
+To add a manager to this swarm, run 'docker swarm join-token manager' and follow the instructions.
   
